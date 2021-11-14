@@ -1,0 +1,83 @@
+@font-face {
+    font-family: 'Creepster';
+    src: url('fonts/Creepster-Regular.woff2') format('woff2'),
+        url('fonts/Creepster-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+.bg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    height: 100%;
+    max-height: 100%;
+}
+.big-title {
+    font-size: 75px;
+}
+body {
+    word-wrap: break-word;
+    user-select: none;
+    color: white;
+    font-family: 'Creepster';
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+img {
+    -webkit-user-drag: none;
+}
+
+.video-container {
+    line-height: 0;
+    position:absolute;
+    bottom: 0;
+    left: 0;
+}
+.modal-content {
+    font-size: 30px;
+    color:#562a2a;
+    height: 500px;
+    border: 0;
+    background: url("ui/panel.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+.close-modal {
+    position: absolute;
+    bottom: 50px;
+    width: 100%;
+    font-size: 18px;
+}
+.modal-title {
+    font-size: 50px;
+    border-bottom: 3px solid #562a2a;
+}
+.modal-close {
+    font-size: 20px;
+}
+
+.character {
+    height: 250px;
+}
+
+.character-small {
+    height: 100px;
+}
+
+.token {
+    font-size: 25px;
+}
+
+.coins-container {
+    position:absolute;
+    top: 0;
+    right: 0;
+}

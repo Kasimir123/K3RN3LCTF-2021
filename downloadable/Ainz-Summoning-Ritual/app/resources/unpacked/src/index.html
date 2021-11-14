@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Ainz Summoning Ritual</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="assets/style.css" rel="stylesheet">
+	<link href="Creepster-Regular.woff2" as="font" type="font/woff2">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="assets/script.js"></script>
+</head>
+
+<body>
+	<div class="vh-100">
+		<div class="h-100 container-fluid text-center">
+			<div>
+				<h1 class="py-3 big-title">AINZ SUMMONING RITUAL</h1>
+			</div>
+			<div class="row">
+				<div class="col-6"></div>
+				<div class="col-6 mt-4">
+					<a class="d-block" href="#" onclick="pullCharacter()"><img src="assets/ui/summon.png" /></a>
+					<a class="d-block" href="#" onclick="viewCharacters()"><img src="assets/ui/characters.png" /></a>
+					<a class="d-block" href="#" onclick="earnCoins()"><img src="assets/ui/earn.png" /></a>
+					<a class="d-block" href="#" onclick="viewLeaderboard()"><img src="assets/ui/leaderboard.png" /></a>
+					<a class="d-block" href="#" onclick="showFirstPage()" ><img src="assets/ui/information.png" /></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="fixed-bottom mx-3">
+		<p class="float-end">Made with ❤️ by Et3rnos</p>
+	</footer>
+	<div class="video-container">
+		<video id="op1" width="400" height="230" loop>
+			<source src="assets/videos/op1.mp4" type="video/mp4">
+		</video>
+	</div>
+	<div class="coins-container mt-5 me-5">
+		<h3><span id="coins"></span> 💰</h3>
+	</div>
+	<div class="modal fade" id="pull" tabindex="-1" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modal-lg">
+			<div class="modal-content text-center p-5">
+				<h2 id="pull-title" class="modal-title">YOU GOT DEMIURGUS</h2>
+				<div class="container-fluid my-5">
+					<div class="row">
+						<div class="col-4">
+							<img id="character-image" class="character" src="assets/characters/demiurgus.png">
+						</div>
+						<div class="col-8">
+							<p id="character-description">The Floor Guardian of the 7th Floor of the Great Tomb of
+								Nazarick and the Commander of the NPC defenses.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="characters" tabindex="-1" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modal-lg">
+			<div class="modal-content text-center p-5">
+				<h2 class="modal-title">MY CHARACTERS</h2>
+				<div class="container-fluid my-5">
+					<div id="characters-container" class="row">
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="ad" tabindex="-1" aria-hidden="true" data-bs-backdrop="static">
+		<div class="modal-dialog modal-dialog-centered modal-lg">
+			<div class="modal-content text-center justify-content-between p-5">
+				<h2 class="modal-title">EARN COINS</h2>
+				<p class="my-2">Please view the following advertisement to gain 10 coins.</p>
+				<div class="text-center">
+					<video id="ad-video" height="250">
+						<source src="assets/videos/ad.mp4" type="video/mp4">
+					</video>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="leaderboard" tabindex="-1" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modal-lg">
+			<div class="modal-content text-center p-5">
+				<h2 class="modal-title">LEADERBOARD</h2>
+				<div id="leaderboard-container" class="my-1">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="information" tabindex="-1" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modal-lg">
+			<div class="modal-content text-center justify-content-between p-5">
+				<h2 class="modal-title">INFORMATION</h2>
+				<div>
+					<p id="first-page" class="d-none">
+						Welcome to our Halloween's challenge!
+						<br>
+						Ainz has been inactive for some time so we need your help to bring him online!
+						<br>
+						What do you have to do? Simple: Just pull one Ainz!
+					</p>
+					<p id="second-page" class="d-none">
+						You are guaranteed to pull an Ainz once you reach 1000000000000 pulls!
+						<br>
+						Note: I heard the developer is hiding some important files in this app. Kinda sus if you ask me...
+					</p>
+				</div>
+				<small id="navigation-button" class="modal-close" onclick="changePage()"> NEXT PAGE >> </small>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
