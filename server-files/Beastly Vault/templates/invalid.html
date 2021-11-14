@@ -1,0 +1,21 @@
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='page.css')}}">
+</head>
+
+<div class="top">
+    <img src="{{url_for('static', filename='beastly_vault.png')}}" style="width: 1000px;">
+</div>
+
+<div class="center">
+
+	<h1 style="color:#bb5920;font-size:48px;">Your access token is invalid.</h1>
+    <br>
+	Reason: {{ error }}
+
+</div>
+
+<div class="bottom">
+
+    Lost your token? Contact your local administrator or use the <a href="/manual_override/">manual override</a>.
+
+</div>

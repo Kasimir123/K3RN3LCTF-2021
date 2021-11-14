@@ -1,0 +1,22 @@
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='page.css')}}">
+</head>
+
+<div class="top">
+    <img src="{{url_for('static', filename='beastly_vault.png')}}" style="width: 1000px;">
+</div>
+
+<div class="center">
+
+	<h1 style="color:#bb5920;font-size:48px;">New user registration.</h1>
+    <br>
+    Please choose a username to be used in the access token.
+
+    <br><br>
+	<form action="/register_user/" method="POST" autocomplete="off">
+
+        <input type="text" id="user" name="user" placeholder="Username">
+
+    </form>
+
+</div>

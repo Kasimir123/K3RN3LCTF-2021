@@ -1,0 +1,22 @@
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='page.css')}}">
+</head>
+
+<div class="top">
+    <img src="{{url_for('static', filename='beastly_vault.png')}}" style="width: 1000px;">
+</div>
+
+<div class="center">
+
+	<h1 style="color:#bb5920;font-size:48px;">Manual override.</h1>
+    <br>
+    Please enter the {{ dig }}-digit security back-up code.
+
+    <br><br>
+	<form action="/override/" method="POST" autocomplete="off">
+
+        <input type="text" id="code" name="code" placeholder="Override Code">
+
+    </form>
+
+</div>

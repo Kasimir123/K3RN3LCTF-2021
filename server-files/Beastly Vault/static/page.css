@@ -1,0 +1,40 @@
+html {
+    background-color: #222222;
+    font:  18px Arial, sans-serif;
+    color: #ffffc2;
+}
+a:link, a:visited {
+    color: #44a6df;
+}
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    width: 100vw;
+    text-align:center;
+}
+.bottom {
+    position:  absolute;
+    top: 95%;
+    left: 50%;
+    -moz-transform:  translateX(-50%) translateY(-95%);
+    -webkit-transform:  translateX(-50%) translateY(-95%);
+    transform: translateX(-50%) translateY(-95%);
+    width: 100vw;
+    text-align:center;
+}
+.top {
+    position:  absolute;
+    top: 25%;
+    left: 50%;
+    -moz-transform:  translateX(-50%) translateY(-25%);
+    -webkit-transform:  translateX(-50%) translateY(-25%);
+    transform: translateX(-50%) translateY(-25%);
+}
+input {
+    width: 400px;
+    height: 30px;
+}
