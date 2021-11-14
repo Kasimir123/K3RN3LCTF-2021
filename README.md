@@ -28,3 +28,21 @@ nc 0.0.0.0 port
 ```
 
 All challenges can be started up from this repository except for wyze guy as it requires a 3 GB file that cannot be added to github.
+
+## Special thanks to all my teammates!!
+
+[Polymero](https://github.com/Polymero)
+
+[Playoff-Rondo](https://github.com/thisusernameistaken)
+
+[Bex](https://github.com/Bex32)
+
+[Seal](https://seal9055.com/)
+
+[DrDoctor](https://github.com/kavandoctor1)
+
+[Et3rnos](https://github.com/Et3rnos)
+
+[Castilho](https://github.com/castilho101)
+
+[TheEasyPeasy](https://github.com/TheEasyPeasy)
